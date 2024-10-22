@@ -2,20 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=din:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.din-thin {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.din-extralight {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.din-light {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.din-regular {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.din-medium {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.din-semibold {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.din-bold {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.din-extrabold {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.din-black {
+  font-family: "Din Regular", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* public/fonts/DIN-Regular.css */
+@font-face {
+  font-family: "DIN Regular";
+  src: url("./fonts/din-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
